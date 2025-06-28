@@ -97,24 +97,15 @@ body {
   cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
-  background: var(--secondary-color); /* Black hero background */
-  color: var(--primary-color); /* Yellow hero text */
-  padding: 8rem 1.5rem 4rem;
-  text-align: center;
+  background-image: url('img/seu-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 6rem 1.5rem 4rem;
 }
 
-.hero-title {
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  opacity: 0.9;
-}
 
 /* General Section Styling */
 section {
@@ -630,5 +621,37 @@ section {
   .budget-form-wrapper {
     flex-grow: 1; /* Allow form wrapper to take available space */
     max-width: 600px; /* Keep max-width for form */
+  }
+}
+/* Estilo para o container com título + isotipo */
+.orcamento-titulo-com-isotipo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.orcamento-titulo-com-isotipo h2 {
+  margin: 0;
+  text-align: center;
+}
+
+/* Estilo para o isotipo */
+.isotipo-orcamento {
+  width: 200px;
+  height: auto;
+}
+
+/* Ajustes específicos para mobile */
+@media (max-width: 767px) {
+  .orcamento-titulo-com-isotipo {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .isotipo-orcamento {
+    width: 200px;
   }
 }
