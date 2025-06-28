@@ -21,7 +21,7 @@ body {
 
 /* Color Variables - Reflecting your logo colors */
 :root {
-  --primary-color: #ffc107; /* Yellow - prominent color in logo */
+  --primary-color: #e1de03; /* Yellow - prominent color in logo */
   --secondary-color: #070707; /* Black - also prominent */
   --text-primary: #070707; /* Primary text color - black */
   --text-secondary: #555; /* Secondary text color - a softer gray if needed */
@@ -228,7 +228,7 @@ section {
 }
 
 .btn:hover {
-  background: #e6b100; /* Darker yellow on hover */
+  background: #e1de03; /* Darker yellow on hover */
   color: var(--background-white); /* White text on hover */
   transform: translateY(-2px);
 }
