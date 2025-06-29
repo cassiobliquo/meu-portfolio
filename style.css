@@ -654,4 +654,49 @@ section {
   .isotipo-orcamento {
     width: 200px;
   }
+
+
+}
+
+/* Seção Sobre Mim com imagem ao lado */
+.section-sobre .sobre-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  flex-wrap: wrap;
+}
+
+.sobre-img {
+  width: 180px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.sobre-texto {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+/* Responsivo para celular */
+@media (max-width: 767px) {
+  .section-sobre .sobre-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sobre-img {
+    width: 120px;
+    margin-bottom: 1.5rem;
+  }
+
+  .sobre-texto {
+    text-align: left;
+    width: 100%;
+  }
 }
